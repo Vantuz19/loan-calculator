@@ -49,9 +49,9 @@ if sys.argv[1] == "--type=annuity":
         overpay = mp * periods - res
     print(f"Overpayment = {int(overpay)}")
 else:
-    summ = 0
+    summa = 0
     for i in range(int(periods)):
         mp = math.ceil(loan / periods + loan_interest * (loan - loan * i / periods))
         print(f"Month {i+1}: payment is {mp}")
-        summ += mp
-    print(f"Overpayment = {math.ceil(summ) - int(loan)}")
+        summa += mp
+    print(f"Overpayment = {math.ceil(summa) - int(loan)}")
